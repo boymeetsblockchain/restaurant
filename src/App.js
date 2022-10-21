@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import FoodComponent from './components/FoodComponent';
+import FoodsComponent from './components/FoodComponent';
 import { useStateContext } from './context/ContextProvider';
 import Sidebar from './components/Sidebar';
 
@@ -19,7 +19,7 @@ function App() {
         )}
         <Header />
       {/* </div> */}
-      <FoodComponent />
+      <FoodsComponent />
       <h1>get started</h1>
     </div>
   );

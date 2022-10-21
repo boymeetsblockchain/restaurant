@@ -1,6 +1,8 @@
 .app {
   position: relative;
   height: 100vh;
+  background-color: #F8F8F8;
+  overflow-y: scroll;
 }
 
 .app-header{
