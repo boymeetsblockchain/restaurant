@@ -1,20 +1,23 @@
 import { GiHamburgerMenu } from "react-icons/gi"
-import {GrNotification} from "react-icons/gr"
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as PersonOutlineIcon } from "../assets/svg/personOutlineIcon.svg";
 import "./Header.css"
 import banner from "../data/banner.png"
 import { useStateContext } from "../context/ContextProvider"
 
 const Header = () => {
     const { setSidebar } = useStateContext()
-
+    const navigate = useNavigate();
+  const onClick =()=>{
+     navigate('/sign-up')
+  }
   return (
     <div className="header">
         <div className="header-items">
               <GiHamburgerMenu onClick={() => setSidebar(true)} style={{ cursor:"pointer"}}/>
               <h1 style={{ cursor: "pointer" }}>Logo</h1>
               <div className="header-right">
-                  <GrNotification style={{ cursor: "pointer" }} />
-                  <h1 >Hi name</h1>
+              <PersonOutlineIcon onClick={onClick} style={{cursor:"pointer"}}/>
               </div>
         </div>
         <div className="banner">

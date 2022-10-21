@@ -1,27 +1,20 @@
-import './App.css';
-import Header from './components/Header';
-import FoodsComponent from './components/FoodComponent';
-import { useStateContext } from './context/ContextProvider';
-import Sidebar from './components/Sidebar';
+
+import{Routes, Route} from 'react-router-dom'
+import SignIn from './pages/Signin';
+import SignUp from './pages/Signup';
+import HomePage from './pages/HomePage';
 
 function App() {
-  const { sidebar } = useStateContext()
+  
 
   return (
-    <div className="app">
-      {/* <div className='app-header'> */}
-        {sidebar? (
-          <div className='sidebar'>
-            <Sidebar />
-          </div>
-        ): (
-          ""
-        )}
-        <Header />
-      {/* </div> */}
-      <FoodsComponent />
-      <h1>get started</h1>
-    </div>
+    <>
+    <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/sign-in' element={<SignIn />}/>
+        <Route path='/sign-up' element={<SignUp />}/>
+      </Routes>
+    </>
   );
 }
 
