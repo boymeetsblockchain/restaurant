@@ -1,0 +1,23 @@
+.footer{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: min-content; */
+    padding: 15px;
+}
+
+.footer-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    font-size: 25px;
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.icon{
+    color: #F2B5C5;
+}

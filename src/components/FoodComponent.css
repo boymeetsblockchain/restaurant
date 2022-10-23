@@ -1,0 +1,33 @@
+.food-component{
+    margin: 0px 15px;
+    margin-bottom: 45px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.title > h2,
+.title > span{
+    margin: 0;
+    padding: 0;
+}
+
+.title > h2{
+    font-size: 24px;
+}
+
+.title > span{
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.food-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}

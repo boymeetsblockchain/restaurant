@@ -1,0 +1,13 @@
+.favorite-header {
+  position: relative;
+  height: 100vh;
+  background-color: #F8F8F8;
+  overflow-y: scroll;
+}
+
+.sidebar{
+  position: fixed;
+  width: 300px;
+  height: inherit;
+  background-color: gray;
+}
